@@ -71,3 +71,58 @@ These assumptions are intentionally simple to focus on system-level energy flow.
 ```bash
 pip install -r requirements.txt
 python src/eps_simulation.py
+
+
+-----
+## Key Results and Analysis
+
+### Single-Orbit EPS Behavior
+The following figure shows EPS behavior over a single orbit for a
+representative configuration (4 solar panels). It captures solar power
+generation, load demand, battery SOC evolution, and net power balance,
+with eclipse periods highlighted.
+
+![Single Orbit EPS Behavior](plots/single_orbit_analysis_4panels.png)
+
+Key observations:
+- Solar power drops to zero during eclipse
+- Battery SOC decreases in eclipse and recovers in sunlight
+- Net power is negative during eclipse and positive during sunlit phases
+- SOC remains above the defined safe threshold
+
+---
+
+### Battery SOC Over Time for Different Panel Counts
+This plot shows long-term battery SOC evolution over multiple orbits for
+different numbers of solar panels.
+
+![Battery SOC vs Time](plots/battery_soc_vs_time_by_panel_count.png)
+
+Key observations:
+- Configurations with fewer panels experience deeper SOC dips
+- Increasing panel count improves SOC stability and margin
+- Some configurations fail to maintain SOC above safe limits
+
+---
+
+### Solar Power vs Load
+The following figure compares solar power generation against spacecraft
+load demand for different solar panel configurations.
+
+![Solar Power vs Load](plots/solar_power_vs_load_by_panel_count.png)
+
+This comparison highlights periods of power deficit and surplus across
+orbital cycles.
+
+---
+
+### Reliability vs Solar Array Mass Trade-off
+This trade study illustrates the relationship between minimum battery SOC
+and total solar array mass.
+
+![Reliability vs Mass](plots/reliability_vs_solar_array_mass.png)
+
+Key observations:
+- A minimum solar array size is required for mission viability
+- Increasing array mass improves reliability with diminishing returns
+- This trade-off informs EPS sizing decisions
