@@ -65,14 +65,6 @@ These plots are used to assess EPS sizing and operational feasibility.
 These assumptions are intentionally simple to focus on system-level energy flow.
 
 ---
-
-## How to Run
-
-```bash
-pip install -r requirements.txt
-python src/eps_simulation.py
-
-
 -----
 ## Key Results and Analysis
 
@@ -126,3 +118,11 @@ Key observations:
 - A minimum solar array size is required for mission viability
 - Increasing array mass improves reliability with diminishing returns
 - This trade-off informs EPS sizing decisions
+
+## How to Run
+
+```bash
+pip install -r requirements.txt
+python src/eps_simulation.py
+
+
