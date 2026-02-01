@@ -119,12 +119,6 @@ Key observations:
 - Increasing array mass improves reliability with diminishing returns
 - This trade-off informs EPS sizing decisions
 
-## How to Run
-
-```bash
-pip install -r requirements.txt
-python src/eps_simulation.py
-
 ## Summary
 
 This project presents a system-level simulation of a CubeSat Electrical Power
@@ -145,4 +139,11 @@ Key findings from the study include:
 Overall, the simulation demonstrates physically consistent EPS behavior and
 illustrates how solar array sizing, load management, and orbital dynamics
 jointly determine mission feasibility.
+
+
+## How to Run
+
+```bash
+pip install -r requirements.txt
+python src/eps_simulation.py
 
