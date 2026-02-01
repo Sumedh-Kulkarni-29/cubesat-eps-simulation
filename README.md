@@ -125,4 +125,24 @@ Key observations:
 pip install -r requirements.txt
 python src/eps_simulation.py
 
+## Summary
+
+This project presents a system-level simulation of a CubeSat Electrical Power
+Subsystem (EPS) operating in Low Earth Orbit. The simulation captures the
+interplay between orbital sunlight conditions, solar power generation,
+battery state-of-charge dynamics, and spacecraft load demand.
+
+Key findings from the study include:
+- Battery SOC exhibits periodic behavior governed by orbital eclipse cycles,
+  with predictable discharge during eclipse and recovery during sunlight.
+- EPS configurations with insufficient solar panel area fail to maintain SOC
+  above safe operational thresholds.
+- A minimum solar panel configuration is required for mission viability,
+  beyond which additional panels provide diminishing improvements in SOC margin.
+- Trade-off analysis between minimum SOC and solar array mass highlights the
+  balance between reliability and spacecraft resource constraints.
+
+Overall, the simulation demonstrates physically consistent EPS behavior and
+illustrates how solar array sizing, load management, and orbital dynamics
+jointly determine mission feasibility.
 
