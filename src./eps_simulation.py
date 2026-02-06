@@ -191,7 +191,7 @@ for p in range(N_p):
     final_soc = SOC[-1, p]
     
     # Check if mission fails (SOC hits minimum)
-    mission_viable = "✓ VIABLE" if min_soc > 0.25 else "✗ FAILS"
+    mission_viable = "VIABLE" if min_soc > 0.25 else " FAILS"
     
     print(f"\n{num_panels[p]} Panels:")
     print(f"  Min SOC: {min_soc:.1%}")
